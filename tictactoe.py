@@ -113,6 +113,7 @@ def play_game(board_size: int = None):
     current_player = X
     while not won(current_player, board):
         show_board(board)
+#S        coordinates = get_move(current_player)
 #        update_board(board, current_player, coordinates)
         current_player = switch_player(current_player)
     show_winner(current_player)
